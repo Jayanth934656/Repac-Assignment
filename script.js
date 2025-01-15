@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const contactForm = document.querySelector('#contact form');
 
-// Add an event listener to handle form submission
+
 contactForm.addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
@@ -32,6 +32,6 @@ contactForm.addEventListener('submit', function (event) {
 
     alert('Thank you for contacting us!');
 
-    // Clear the form
+
     contactForm.reset();
 });
