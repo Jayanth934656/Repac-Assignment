@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globex Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="data:image/png;base64,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"/>
+        </div>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Globex Company</h1>
+            <p>Your trusted partner for innovative solutions.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Globex Company is dedicated to providing cutting-edge solutions for businesses around the globe. Our mission is to empower organizations with innovative tools and services that drive growth and success.
+            Globex is a leading global provider of innovative solutions, specializing in cutting-edge technology and consulting services. We empower businesses to streamline operations, enhance efficiency, and drive digital transformation. With a commitment to excellence, we delive
+            r tailored solutions that meet the unique needs of our clients across diverse industries.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Consulting</h3>
+                <p>Expert advice to guide your business decisions.</p>
+            </div>
+            <div class="service-item">
+                <h3>Technology Solutions</h3>
+                <p>Innovative tech solutions tailored to your needs.</p>
+            </div>
+            <div class="service-item">
+                <h3>Support</h3>
+                <p>Reliable support to keep your operations running smoothly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="#contact form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Contact us at <a href="mailto:info@globex.com">info@globex.com</a></p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/click_globex/"><i class="fa-brands fa-instagram"></i></a> 
+            <a href="https://www.linkedin.com/company/globexdigital/?originalSubdomain=in"><i class="fa-brands fa-linkedin"></i></a> 
+            <a href="https://www.facebook.com/GlobexUSA/photos_by/"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <p>&copy; 2025 Globex Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
